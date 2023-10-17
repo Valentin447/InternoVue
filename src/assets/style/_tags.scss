@@ -1,0 +1,37 @@
+.tags{
+  margin-left: 52px;
+  &__heading{
+    color: $color3;
+    font-family: 'DM Serif Display';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.5px;
+  }
+  &__list{
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 345px;
+    gap: 10px;
+    &-button{
+      padding: 9px 30px;
+      color: #000;
+      text-align: center;
+      font-family: 'Jost';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 125%;
+      letter-spacing: 0.36px;
+      border: none;
+      border-radius: 10px;
+      background: $color2;
+      cursor: pointer;
+      &-selected{
+        background: $color3;
+        color: #FFF;
+      }
+    }
+  }
+}

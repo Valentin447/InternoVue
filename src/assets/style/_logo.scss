@@ -1,0 +1,11 @@
+.logo{
+  text-decoration: none;
+  font-family: "DM Serif Display";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  color: $color3;
+  &__img{
+    margin-right: 8px;
+  }
+}

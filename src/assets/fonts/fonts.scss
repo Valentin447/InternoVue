@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'DM Serif Display';
+	font-style: normal;
+	font-weight: normal;
+	src: local('DM Serif Display'),
+		url('./../fonts/DMSerifDisplay-Regular.ttf'), format('ttf');
+}
+
+@font-face {
+	font-family: 'DM Serif Display';
+	font-style: italic;
+	font-weight: normal;
+	src: local('DM Serif Display'),
+		url('./../fonts/DMSerifDisplay-Italic.ttf'), format('ttf');
+}
+
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Jost'),
+		url('./../fonts/Jost-Regular.ttf'), format('ttf');
+}
+
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Jost'),
+		url('./../fonts/Jost-Medium.ttf'), format('ttf');
+}
+
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Jost'),
+		url('./../fonts/Jost-SemiBold.ttf'), format('ttf');
+}

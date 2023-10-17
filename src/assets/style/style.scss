@@ -1,0 +1,24 @@
+@import "./../fonts/fonts";
+@import "./variables";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "./logo";
+@import "./header";
+@import "./footer";
+@import "./banner";
+@import "./post-link";
+@import "./post";
+@import "./articles";
+@import "./tags";
+@import "./blog-details";
+@import "./index";
+@import "./blog";

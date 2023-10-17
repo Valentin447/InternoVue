@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderComponent />
+  <InedxComponent />
+  <BlogComponent />
+  <BlogDetails />
+  <FooterComponent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BlogComponent from './components/BlogComponent.vue';
+import BlogDetails from './components/BlogDetails.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+import InedxComponent from './components/InedxComponent.vue';
+import PostComponent from './components/PostComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components:{
+    InedxComponent,
+    BlogComponent,
+    BlogDetails,
+    PostComponent,
+    HeaderComponent,
+    FooterComponent
+}
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
