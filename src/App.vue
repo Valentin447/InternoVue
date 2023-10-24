@@ -3,6 +3,7 @@
   <InedxComponent />
   <BlogComponent />
   <BlogDetails />
+  <OurProgect />
   <FooterComponent />
 </template>
 
@@ -13,6 +14,7 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import InedxComponent from './components/InedxComponent.vue';
 import PostComponent from './components/PostComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import OurProgect from './components/OurProgect.vue';
 
 export default {
   components:{
@@ -21,7 +23,8 @@ export default {
     BlogDetails,
     PostComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OurProgect
 }
 }
 </script>

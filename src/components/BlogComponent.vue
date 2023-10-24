@@ -67,72 +67,62 @@
           </div>
         </li>
       </ul>
-      <div class="articles__pagination">
-        <button
-          class="articles__pagination-button articles__pagination-button-current"
-        >
-          01
-        </button>
-        <button class="articles__pagination-button">02</button>
-        <button class="articles__pagination-button">03</button>
-        <button class="articles__pagination-button">
-          <img
-            class="articles__pagination-button-arrow-right"
-            src="./../assets/img/arrow2.svg"
-            alt="next"
-          />
-        </button>
-      </div>
+      
+
+      <PaginationComponent />
+
     </section>
   </div>
 </template>
 
 <script>
+import PaginationComponent from './PaginationComponent.vue';
+
 
 export default {
-  data() {
-    return {
-      
-      posts: [
-        {
-          label: "Kitchan Design",
-          photoSrc: require("@/assets/img/rooms/Photo7.jpg"),
-          heading: "Let's Get Solution For Building Construction Work",
-          time: "26 December,2022",
-        },
-        {
-          label: "Living Design",
-          photoSrc: require("@/assets/img/rooms/Photo7.jpg"),
-          heading: "Low Cost Latest Invented Interior Designing Ideas.",
-          time: "22 December,2022",
-        },
-        {
-          label: "Interior Design",
-          photoSrc: require("@/assets/img/rooms/Photo8.jpg"),
-          heading: "Best For Any Office & Business Interior Solution",
-          time: "25 December,2022",
-        },
-        {
-          label: "Kitchan Design",
-          photoSrc: require("@/assets/img/rooms/Photo10.jpg"),
-          heading: "Let's Get Solution For Building Construction Work",
-          time: "26 December,2022",
-        },
-        {
-          label: "Living Design",
-          photoSrc: require("@/assets/img/rooms/Photo11.jpg"),
-          heading: "Low Cost Latest Invented Interior Designing Ideas.",
-          time: "22 December,2022",
-        },
-        {
-          label: "Interior Design",
-          photoSrc: require("@/assets/img/rooms/Photo12.jpg"),
-          heading: "Best For Any Office & Business Interior Solution",
-          time: "25 December,2022",
-        },
-      ],
-    }
-  },
+    data() {
+        return {
+            posts: [
+                {
+                    label: "Kitchan Design",
+                    photoSrc: require("@/assets/img/rooms/Photo7.jpg"),
+                    heading: "Let's Get Solution For Building Construction Work",
+                    time: "26 December,2022",
+                },
+                {
+                    label: "Living Design",
+                    photoSrc: require("@/assets/img/rooms/Photo7.jpg"),
+                    heading: "Low Cost Latest Invented Interior Designing Ideas.",
+                    time: "22 December,2022",
+                },
+                {
+                    label: "Interior Design",
+                    photoSrc: require("@/assets/img/rooms/Photo8.jpg"),
+                    heading: "Best For Any Office & Business Interior Solution",
+                    time: "25 December,2022",
+                },
+                {
+                    label: "Kitchan Design",
+                    photoSrc: require("@/assets/img/rooms/Photo10.jpg"),
+                    heading: "Let's Get Solution For Building Construction Work",
+                    time: "26 December,2022",
+                },
+                {
+                    label: "Living Design",
+                    photoSrc: require("@/assets/img/rooms/Photo11.jpg"),
+                    heading: "Low Cost Latest Invented Interior Designing Ideas.",
+                    time: "22 December,2022",
+                },
+                {
+                    label: "Interior Design",
+                    photoSrc: require("@/assets/img/rooms/Photo12.jpg"),
+                    heading: "Best For Any Office & Business Interior Solution",
+                    time: "25 December,2022",
+                },
+            ],
+        };
+    },
+    components: { PaginationComponent }
 };
 </script>
 
