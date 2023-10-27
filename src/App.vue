@@ -4,7 +4,9 @@
   <BlogComponent />
   <BlogDetails />
   <OurProgect />
+  <ProjectDtails />
   <FooterComponent />
+  
 </template>
 
 <script>
@@ -15,6 +17,7 @@ import InedxComponent from './components/InedxComponent.vue';
 import PostComponent from './components/PostComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import OurProgect from './components/OurProgect.vue';
+import ProjectDtails from './components/ProjectDtails.vue';
 
 export default {
   components:{
@@ -24,7 +27,8 @@ export default {
     PostComponent,
     HeaderComponent,
     FooterComponent,
-    OurProgect
+    OurProgect,
+    ProjectDtails
 }
 }
 </script>
