@@ -61,13 +61,13 @@
         <h5 class="project-card__info-heading">{{ project.title }}</h5>
         <span class="project-card__info-text">{{ project.info }}</span>
       </div>
-      <button class="project-card__info-button">
-        <img
+      <router-link class="project-card__info-button" to="/project-details"><img
           class="project-card__info-button-arrow"
           src="./../assets/img/arrow2.svg"
           alt="arrow"
-        />
-      </button>
+        /></router-link>
+
+
     </div>
   </div>
 </template>

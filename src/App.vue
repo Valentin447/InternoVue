@@ -1,34 +1,34 @@
 <template>
   <HeaderComponent />
-  <InedxComponent />
+  <!-- <IndexComponent />
   <BlogComponent />
   <BlogDetails />
   <OurProgect />
-  <ProjectDtails />
-  <FooterComponent />
-  
+  <ProjectDetails />
+  <FooterComponent /> -->
+  <router-view />
 </template>
 
 <script>
-import BlogComponent from './components/BlogComponent.vue';
-import BlogDetails from './components/BlogDetails.vue';
+import BlogComponent from './pages/Blog.vue';
+import BlogDetails from './pages/BlogDetails.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
-import InedxComponent from './components/InedxComponent.vue';
+import IndexComponent from './pages/Index.vue';
 import PostComponent from './components/PostComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-import OurProgect from './components/OurProgect.vue';
-import ProjectDtails from './components/ProjectDtails.vue';
+import OurProgect from './pages/OurProgect.vue';
+import ProjectDetails from './pages/ProjectDetails.vue';
 
 export default {
   components:{
-    InedxComponent,
+    IndexComponent,
     BlogComponent,
     BlogDetails,
     PostComponent,
     HeaderComponent,
     FooterComponent,
     OurProgect,
-    ProjectDtails
+    ProjectDetails
 }
 }
 </script>

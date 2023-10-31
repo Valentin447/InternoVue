@@ -7,15 +7,18 @@
       <PostComponent />
     </div>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
-import PostComponent from './PostComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
+import PostComponent from './../components/PostComponent.vue';
 
   export default {
     components:{
-      PostComponent
-    }
+    PostComponent,
+    FooterComponent
+}
   }
 </script>
 

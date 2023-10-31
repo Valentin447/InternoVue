@@ -1,24 +1,48 @@
 <template>
   <div class="container">
-  <header class="header">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="./../assets/img/Logo.png" alt="logo" />Interno
-      </a>
+    <header class="header">
+      <router-link class="logo" to="/"><img
+          class="logo__img"
+          src="./../assets/img/Logo.png"
+          alt="logo"
+        />Interno</router-link>
       <nav class="header__nav">
-        <a class="header__nav-link" href="index.html">Home</a>
-        <a class="header__nav-link" href="index.html">Project</a>
-        <a class="header__nav-link" href="index.html">Blog</a>
+        <router-link
+          class="header__nav-link"
+          v-for="link in linkArr"
+          :key="link.id"
+          :to="link.url"
+          >{{ link.name }}</router-link
+        >
       </nav>
     </header>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+  data() {
+    return {
+      linkArr: [
+        {
+          id: 0,
+          name: "Home",
+          url: "/",
+        },
+        {
+          id: 1,
+          name: "Project",
+          url: "/project",
+        },
+        {
+          id: 2,
+          name: "Blog",
+          url: "/blog",
+        },
+      ],
+    };
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

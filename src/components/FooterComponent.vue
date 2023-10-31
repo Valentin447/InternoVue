@@ -21,9 +21,13 @@
       <section class="footer__pages">
         <h5 class="footer__heading">Pages</h5>
         <nav class="footer__nav">
-          <a class="footer__text" href="index.html">Home</a>
-          <a class="footer__text" href="index.html">Project</a>
-          <a class="footer__text" href="index.html">Blog</a>
+          <router-link
+          class="footer__text"
+          v-for="link in linkArr"
+          :key="link.id"
+          :to="link.url"
+          >{{ link.name }}</router-link
+        >
         </nav>
       </section>
       <section class="footer__contact">
@@ -39,7 +43,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      linkArr: [
+        {
+          id: 0,
+          name: "Home",
+          url: "/",
+        },
+        {
+          id: 1,
+          name: "Project",
+          url: "/project",
+        },
+        {
+          id: 2,
+          name: "Blog",
+          url: "/blog",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

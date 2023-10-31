@@ -48,8 +48,8 @@
     </section>
     <section id="app" class="articles blog__articles">
       <h2 class="articles__heading blog__articles-heading">Articles & News</h2>
-      <ul class="articles__list">
-        <li v-for="post in posts" :key="post.index" class="post-link">
+      <div class="articles__list">
+        <router-link to="/blog-details" v-for="post in posts" :key="post.index" class="post-link">
           <div class="post-link__label">{{ post.label }}</div>
           <img class="post-link__photo" :src="post.photoSrc" alt="photo" />
           <h5 class="post-link__heading">
@@ -65,18 +65,21 @@
               />
             </button>
           </div>
-        </li>
-      </ul>
+        </router-link>
+      </div>
       
 
       <PaginationComponent />
 
     </section>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
-import PaginationComponent from './PaginationComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent.vue';
+import PaginationComponent from './../components/PaginationComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 
 export default {
@@ -122,7 +125,7 @@ export default {
             ],
         };
     },
-    components: { PaginationComponent }
+    components: { PaginationComponent, HeaderComponent, FooterComponent }
 };
 </script>
 

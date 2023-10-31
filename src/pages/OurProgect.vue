@@ -23,11 +23,13 @@
       <PaginationComponent />
     </div>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
-import PaginationComponent from "./PaginationComponent.vue";
-import ProjectCard from "./ProjectCard.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
+import PaginationComponent from "./../components/PaginationComponent.vue";
+import ProjectCard from "./../components/ProjectCard.vue";
 export default {
   data() {
     return {
@@ -100,7 +102,8 @@ export default {
   components: {
     ProjectCard,
     PaginationComponent,
-  },
+    FooterComponent
+},
 };
 </script>
 

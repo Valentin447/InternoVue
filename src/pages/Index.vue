@@ -192,10 +192,13 @@
       </div>
     </section>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
-export default {};
+import FooterComponent from '@/components/FooterComponent.vue';
+
+export default { components: { FooterComponent } };
 </script>
 
 <style lang="scss" scoped></style>

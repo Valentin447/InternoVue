@@ -37,14 +37,16 @@
       </div>
     </div>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
-import SliderComponent from "./SliderComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
+import SliderComponent from "./../components/SliderComponent";
 import { mapState } from "vuex";
 
 export default { 
-  components: { SliderComponent }, 
+  components: { SliderComponent, FooterComponent }, 
   computed:{
     ...mapState(["project"])
 } };
